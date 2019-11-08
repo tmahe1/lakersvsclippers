@@ -8,7 +8,7 @@ body {
 .column {
 	display: block;
 	height: 100% ;
-	width: 31.25%;
+	width: 33.33%;
 }
 
 .rectangle {
@@ -25,18 +25,18 @@ body {
 
 .bigcolumn {
 	height: 100%;
-	width: 37.5%;
+	width: 33.33%;
 	display: block;
 }
 
 .box {
-	height: 55%;
+	height: 45%;
 	width:100%;
 	display: flex;
 }
 
 .box1 {
-	height:25%;
+	height:35%;
 	width: 100%;
 	display: block;
 	text-align: center;
