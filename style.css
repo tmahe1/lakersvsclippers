@@ -49,21 +49,20 @@ body {
 }
 
 .contain-image {
-	align-items:center;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-	height: auto;
 	justify-content: center;
+	align-items: center;
 }
 
 .contain-image1 {
-	align-items:center;
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 100%;
 	max-height: 100%;
-	justify-content: center;
+}
+
+.font {
+	font-family: fantasy, bold;
+	font-size: 16px;
 }
 /* colors */
 .purple {background-color:#552583;}
@@ -72,57 +71,74 @@ body {
 .blue {background-color: #1D428A;}
 .gradient {background-image: linear-gradient(to right, #FDB927,#FFFFFF, #C8102E)}
 .gradient1 {background-image: linear-gradient(to right, #552583,#FFFFFF, #1D428A)}
+.gradient2 {background-image: linear-gradient(to right, #552583,#FFFFFF, #1D428A)}
 
 /* responsiveness */
+
+@media only screen and (max-width: 1100px) {
+	.font{
+		font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.font{
+		font-size: 12px;
+	}
+}
 @media only screen and (max-width: 600px) {
-  body {
+	body {
     display:block;
 	height: 150%;
-  }
+	}
   
-  .column {
+	.column {
 	  height: 50%;
 	  width: 100%;
 	  display: block;
-  }
+	}
   
-  .bigcolumn {
+	.bigcolumn {
 	  height: 50%;
 	  width: 100%;
 	  display: block;
-  }
+	}
   
-  .rectangle {
+	.rectangle {
 	  height: 20%;
 	  width: 100%;
 	  display: flex;
-  }
-  
-  .bigrectangle {
+	}
+	
+	.bigrectangle {
 	  height: 80%;
 	  width: 100%;
 	  display: flex;
-  }
+	}
   
-  .rectangle1 {
+	.rectangle1 {
 	  height: 20%;
 	  width: 100%;
 	  display: flex;
-  }
+	}
   
-  .box{
+	.box{
 	  height: 60%;
 	  width: 100%;
 	  display: flex;
-  }
+	}
   
-  .box1 {
+	.box1 {
 	  height: 20%;
 	  width: 100%;
 	  display: flex;
 	  text-align: center;
-	  font-size: 10;
+	  font-size: 9px;
 	  margin-left: auto;
 	  margin-right: auto;
-  }
+	}
+	.gradient {background-image: linear-gradient(to bottom, #552583,#FFFFFF,#FDB927)}
+	.gradient1 {background-image: linear-gradient(to bottom, #1D428A,#FFFFFF, #C8102E)}
+	.gradient2 {background-image: linear-gradient(to bottom, #FDB927,#FFFFFF, #1D428A)}
+  
 }
