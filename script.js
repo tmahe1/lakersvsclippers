@@ -1,3 +1,4 @@
+//my variables that make lines of code shorter in other functions.
 var a = document.getElementById("lakers");
 var b = document.getElementById("clippers");
 var c = document.getElementById("reset");
@@ -12,9 +13,10 @@ var k = document.getElementById("bigrectangle1");
 var l = document.getElementById("rectangle2");
 var m = document.getElementById("lebronvskawhi");
 var n = document.getElementById("bigcolumn");
+var o = document.getElementById("vs");
 
 // changes entire page to lakers page
-function makeLakers(){
+function makeLakers(onClick){
 	f.classList.remove("gradient");
 	f.classList.remove("blue");
 	f.classList.add("gradient3");
@@ -33,6 +35,9 @@ function makeLakers(){
 	m.src="images/lebronnnnn.jpg";
 	e.src="images/lakersalltime.jpg";
 	b.src="images/oldschoollakers.PNG";
+	a.classList.add("opaque");
+	o.classList.add("none");
+	
 }
 
 //changes entire page to clippers page
@@ -55,8 +60,10 @@ function makeClippers(){
 	m.src="images/kawhi.jpg";
 	d.src="images/25-Clippers.jpg";
 	a.src="images/oldschoolclippers.png";
+	b.classList.add("opaque");
+	o.classList.add("none");
 }
-
+//this function allows the page to be reset without having to click on the refresh button.
 function resetButton(){
 	f.classList.add("gradient");
 	g.classList.add("gradient2");
@@ -91,4 +98,7 @@ function resetButton(){
 	l.classList.add("yellow");
 	h.classList.remove("red");
 	h.classList.add("purple");
+	a.classList.remove("opaque");
+	b.classList.remove("opaque");
+	o.classList.remove("none");
 }
